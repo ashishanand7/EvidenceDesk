@@ -1,0 +1,9 @@
+[project]
+name = "evidence-desk"
+version = "0.1.0"
+description = "Offline synthetic financial-evidence verification workbench"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.unittest]
+start-directory = "tests"
