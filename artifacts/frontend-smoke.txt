@@ -1,0 +1,2 @@
+PASS: frontend DOM-stub smoke checks (initial render; conflict/stale/injection/known-gap examples; action/scope boundaries; repeated-submit guard; tab switch; 19-case evaluation; JSON export; error recovery).
+Not run: real browser, CSS layout, mobile viewport, keyboard/accessibility tree, download UI.

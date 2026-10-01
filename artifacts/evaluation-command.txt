@@ -1,0 +1,28 @@
+{
+  "dataset": "synthetic-adversarial-v1",
+  "baseline": {
+    "decision_correct": 5,
+    "total": 19,
+    "unsafe_accepted": 14,
+    "unsafe_total": 14,
+    "supported_accepted": 5,
+    "supported_total": 5,
+    "false_abstentions": 0
+  },
+  "checked": {
+    "decision_correct": 17,
+    "total": 19,
+    "unsafe_accepted": 1,
+    "unsafe_total": 14,
+    "supported_accepted": 4,
+    "supported_total": 5,
+    "false_abstentions": 1
+  },
+  "limitations": [
+    "Small, author-controlled synthetic set; not real-world or model-quality evidence.",
+    "Pass-through ablation baseline, not a competing LLM system.",
+    "No live LLM, PDF/OCR pipeline, on-chain integration, deployment or users tested.",
+    "A forecast-qualified document still passes: exact arithmetic is not semantic entailment.",
+    "Supported paraphrased evidence is rejected: narrow grammar sacrifices recall."
+  ]
+}

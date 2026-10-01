@@ -1,0 +1,226 @@
+{
+  "status": "VERIFIED",
+  "issues": [],
+  "claims": [
+    {
+      "metric": "coverage_ratio",
+      "value": "1.2400",
+      "unit": "x",
+      "period": "2026-09-30",
+      "citations": [
+        {
+          "document_id": "atlas-sep",
+          "quote": "Reserves: 124 USD million",
+          "line": 2,
+          "sha256": "e84415a6066a5debbe00a111609a680bb57afd32c49189f834b2f495e29346e6"
+        },
+        {
+          "document_id": "atlas-sep",
+          "quote": "Liabilities: 100 USD million",
+          "line": 3,
+          "sha256": "e84415a6066a5debbe00a111609a680bb57afd32c49189f834b2f495e29346e6"
+        }
+      ]
+    }
+  ],
+  "entity": "Atlas Reserve",
+  "question": "What is the reserve coverage ratio?",
+  "as_of": "2026-10-01",
+  "provider": "deterministic-extractor-v1 (no LLM)",
+  "candidate": {
+    "entity": "Atlas Reserve",
+    "provider": "deterministic-extractor-v1",
+    "claims": [
+      {
+        "metric": "coverage_ratio",
+        "value": "1.2400",
+        "unit": "x",
+        "period": "2026-09-30",
+        "citations": [
+          {
+            "document_id": "atlas-sep",
+            "quote": "Reserves: 124 USD million",
+            "line": 2,
+            "sha256": "e84415a6066a5debbe00a111609a680bb57afd32c49189f834b2f495e29346e6"
+          },
+          {
+            "document_id": "atlas-sep",
+            "quote": "Liabilities: 100 USD million",
+            "line": 3,
+            "sha256": "e84415a6066a5debbe00a111609a680bb57afd32c49189f834b2f495e29346e6"
+          }
+        ]
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "atlas-aug",
+      "title": "August archive",
+      "entity": "Atlas Reserve",
+      "text": "As of: 2026-08-31\nReserves: 118 USD million\nLiabilities: 100 USD million\nScope: historical snapshot; not a real issuer.",
+      "provenance": "Synthetic, authored 2026-10-01 for this project; no real issuer or financial data",
+      "sha256": "a8f81a32608540606c8b1cfba8491dd286f4b81573744c61b3023c3e0b15a743"
+    },
+    {
+      "id": "atlas-sep",
+      "title": "September reserve statement",
+      "entity": "Atlas Reserve",
+      "text": "As of: 2026-09-30\nReserves: 124 USD million\nLiabilities: 100 USD million\nScope: customer-token balances only; no assessment of operational liabilities.\nAttestation: synthetic fixture, not an audit.",
+      "provenance": "Synthetic, authored 2026-10-01 for this project; no real issuer or financial data",
+      "sha256": "e84415a6066a5debbe00a111609a680bb57afd32c49189f834b2f495e29346e6"
+    }
+  ],
+  "trace": [
+    {
+      "sequence": 0,
+      "stage": "request",
+      "detail": {
+        "entity": "Atlas Reserve",
+        "question": "What is the reserve coverage ratio?",
+        "as_of": "2026-10-01",
+        "provider": "deterministic-extractor-v1"
+      },
+      "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "hash": "6620a67eb5da7d48300b3c231a6a42a1ad1d9d4d537c4921ebdb6370fb3d4abb"
+    },
+    {
+      "sequence": 1,
+      "stage": "retrieval",
+      "detail": {
+        "tool": {
+          "tool": "search_documents",
+          "allowed": true,
+          "reason": "Read-only local evidence tool"
+        },
+        "document_ids": [
+          "atlas-aug",
+          "atlas-sep"
+        ],
+        "strategy": "entity-filtered lexical ranking; retain all matches for conflict checks"
+      },
+      "previous_hash": "6620a67eb5da7d48300b3c231a6a42a1ad1d9d4d537c4921ebdb6370fb3d4abb",
+      "hash": "0b6107071a45cae94fcc4e3ee302d6ae54ae2d13b7f87f75523023a4d457529e"
+    },
+    {
+      "sequence": 2,
+      "stage": "extraction",
+      "detail": {
+        "facts": [
+          {
+            "document_id": "atlas-aug",
+            "entity": "Atlas Reserve",
+            "metric": "reserves",
+            "value": "118000000",
+            "currency": "USD",
+            "period": "2026-08-31",
+            "quote": "Reserves: 118 USD million",
+            "line": 2,
+            "sha256": "a8f81a32608540606c8b1cfba8491dd286f4b81573744c61b3023c3e0b15a743"
+          },
+          {
+            "document_id": "atlas-aug",
+            "entity": "Atlas Reserve",
+            "metric": "liabilities",
+            "value": "100000000",
+            "currency": "USD",
+            "period": "2026-08-31",
+            "quote": "Liabilities: 100 USD million",
+            "line": 3,
+            "sha256": "a8f81a32608540606c8b1cfba8491dd286f4b81573744c61b3023c3e0b15a743"
+          },
+          {
+            "document_id": "atlas-sep",
+            "entity": "Atlas Reserve",
+            "metric": "reserves",
+            "value": "124000000",
+            "currency": "USD",
+            "period": "2026-09-30",
+            "quote": "Reserves: 124 USD million",
+            "line": 2,
+            "sha256": "e84415a6066a5debbe00a111609a680bb57afd32c49189f834b2f495e29346e6"
+          },
+          {
+            "document_id": "atlas-sep",
+            "entity": "Atlas Reserve",
+            "metric": "liabilities",
+            "value": "100000000",
+            "currency": "USD",
+            "period": "2026-09-30",
+            "quote": "Liabilities: 100 USD million",
+            "line": 3,
+            "sha256": "e84415a6066a5debbe00a111609a680bb57afd32c49189f834b2f495e29346e6"
+          }
+        ],
+        "grammar": "exact numeric labels; source prose is never executed"
+      },
+      "previous_hash": "0b6107071a45cae94fcc4e3ee302d6ae54ae2d13b7f87f75523023a4d457529e",
+      "hash": "f03eac33e7f867164050b0191e8b2953e92eb2a5b094e2b85778499ab3549c31"
+    },
+    {
+      "sequence": 3,
+      "stage": "candidate",
+      "detail": {
+        "entity": "Atlas Reserve",
+        "provider": "deterministic-extractor-v1",
+        "claims": [
+          {
+            "metric": "coverage_ratio",
+            "value": "1.2400",
+            "unit": "x",
+            "period": "2026-09-30",
+            "citations": [
+              {
+                "document_id": "atlas-sep",
+                "quote": "Reserves: 124 USD million",
+                "line": 2,
+                "sha256": "e84415a6066a5debbe00a111609a680bb57afd32c49189f834b2f495e29346e6"
+              },
+              {
+                "document_id": "atlas-sep",
+                "quote": "Liabilities: 100 USD million",
+                "line": 3,
+                "sha256": "e84415a6066a5debbe00a111609a680bb57afd32c49189f834b2f495e29346e6"
+              }
+            ]
+          }
+        ]
+      },
+      "previous_hash": "f03eac33e7f867164050b0191e8b2953e92eb2a5b094e2b85778499ab3549c31",
+      "hash": "d097c3ba87e6ed4e5ef92215fa873ed3fd1297968a309569ff14c14e547a0bc8"
+    },
+    {
+      "sequence": 4,
+      "stage": "validation",
+      "detail": {
+        "status": "VERIFIED",
+        "issues": [],
+        "claims": [
+          {
+            "metric": "coverage_ratio",
+            "value": "1.2400",
+            "unit": "x",
+            "period": "2026-09-30",
+            "citations": [
+              {
+                "document_id": "atlas-sep",
+                "quote": "Reserves: 124 USD million",
+                "line": 2,
+                "sha256": "e84415a6066a5debbe00a111609a680bb57afd32c49189f834b2f495e29346e6"
+              },
+              {
+                "document_id": "atlas-sep",
+                "quote": "Liabilities: 100 USD million",
+                "line": 3,
+                "sha256": "e84415a6066a5debbe00a111609a680bb57afd32c49189f834b2f495e29346e6"
+              }
+            ]
+          }
+        ]
+      },
+      "previous_hash": "d097c3ba87e6ed4e5ef92215fa873ed3fd1297968a309569ff14c14e547a0bc8",
+      "hash": "d9f68edf92afbced559f9bc5bb5eebe24184943e1d6e16905add85ec5a165b31"
+    }
+  ],
+  "disclaimer": "Synthetic prototype. VERIFIED means the narrow numerical checks passed, not that an entity is safe or solvent."
+}
