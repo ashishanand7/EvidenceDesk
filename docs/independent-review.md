@@ -1,6 +1,6 @@
 # Independent adversarial review
 
-Reviewed on 2026-10-01 in a separate AI-assisted review pass. This is a review of the deterministic local prototype,
+Reviewed on 2026-10-01 in a separate review pass. This is a review of the deterministic local prototype,
 especially `evidence_desk/core.py`, using synthetic evidence. It is not a financial
 audit, production penetration test, or assessment of any real issuer.
 

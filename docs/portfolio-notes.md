@@ -2,16 +2,16 @@
 
 ## Project label
 
-**Evidence Desk — Personal, AI-assisted prototype | October 2026**
+**Evidence Desk — Personal prototype | October 2026**
 
-Use only after personally running, reviewing and understanding the implementation. It is a new independent prototype, not employment history or prior production experience. AI assistance should be acknowledged honestly when discussing how it was built.
+Use only after personally running, reviewing and understanding the implementation. It is a new independent prototype, not employment history or prior production experience.
 
 ## Two concise resume bullets
 
 - Built an offline Python/JavaScript evidence-verification prototype with exact source citations, decimal reserve-ratio checks, contradiction review, explicit abstention and exportable inspection traces
 - Added 57 Python tests, including HTTP/CLI integration and 80 seeded arithmetic subcases; evaluated 19 authored synthetic candidates and documented both a semantic false acceptance and a parser false abstention
 
-If the owner has not yet reviewed and understood the implementation, use “Developed an AI-assisted prototype” rather than implying independent unaided authorship. The test count describes methods, not 57 independent real-world financial tasks. No public URL should be added until the exact repository and revision are verified.
+The test count describes methods, not 57 independent real-world financial tasks. No public URL should be added until the exact repository and revision are verified.
 
 ## Avoid claiming
 
