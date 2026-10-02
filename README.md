@@ -2,7 +2,7 @@
 
 ### An answer is only as strong as its evidence.
 
-An independent personal prototype, created **October 2026**, for inspecting evidence-backed financial claims. It pairs a deliberately bounded Python verification pipeline with a small browser workbench, a CLI, and a reproducible adversarial evaluation.
+An independent personal prototype, for inspecting evidence-backed financial claims. It pairs a deliberately bounded Python verification pipeline with a small browser workbench, a CLI, and a reproducible adversarial evaluation.
 
 **No API keys. No runtime dependencies. No live LLM. No real issuer data. No financial actions.**
 
