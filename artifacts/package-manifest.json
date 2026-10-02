@@ -10,8 +10,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 13139,
-      "sha256": "951ae1a9768f642c5f8d2a9392da8cb94492f9493a71ad76217f3723ce8bc099"
+      "bytes": 13111,
+      "sha256": "5c4add7ddcfe7e069e3ac048851ce22c6ff8b837f4e42b43b1e4a883d0f34c58"
     },
     {
       "path": "artifacts/evaluation-command.txt",
@@ -75,13 +75,13 @@
     },
     {
       "path": "docs/independent-review.md",
-      "bytes": 8371,
-      "sha256": "52e3914e9e452da32bb7b365ee211a5e5493181bf06ebd7b26493108d69a7daf"
+      "bytes": 8359,
+      "sha256": "ba0e911b3b01bd7f911b29d2865877d17e750954d0ec30a62ec740e6b6c9a8e5"
     },
     {
       "path": "docs/portfolio-notes.md",
-      "bytes": 2080,
-      "sha256": "761497c81ad44b400c2f3803280dd50cc00c87c5f6811298e52f7317689b8920"
+      "bytes": 1820,
+      "sha256": "175088e8454a667f59eec7fc3f38e5191d1a9bc0541be371e17a17f113fdeb22"
     },
     {
       "path": "evidence_desk/__init__.py",
