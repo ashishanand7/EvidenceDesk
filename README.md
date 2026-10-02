@@ -6,7 +6,7 @@ An independent personal prototype, created **October 2026**, for inspecting evid
 
 **No API keys. No runtime dependencies. No live LLM. No real issuer data. No financial actions.**
 
-The project is AI-assisted. Its implemented contribution is the evidence/verification/evaluation boundary that could surround an AI candidate generator. The bundled generator is deterministic; it is not described as a trained model, an autonomous financial agent, or a production deployment.
+The implemented contribution is the evidence/verification/evaluation boundary that could surround an AI candidate generator. The bundled generator is deterministic; it is not described as a trained model, an autonomous financial agent, or a production deployment.
 
 ## Try it in two minutes
 
